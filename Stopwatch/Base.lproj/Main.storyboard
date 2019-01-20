@@ -38,10 +38,19 @@
                                     <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lVK-fF-YMT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGE-lL-nEu">
+                                <rect key="frame" x="168" y="617" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1uz-Jj-wH0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="chf-vK-RhQ" secondAttribute="trailing" constant="16" id="8mO-eF-Jbh"/>
+                            <constraint firstItem="oGE-lL-nEu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NJ9-Ha-woT"/>
+                            <constraint firstItem="oGE-lL-nEu" firstAttribute="centerY" secondItem="u6h-Du-g9P" secondAttribute="centerY" id="Rnn-td-5jI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u6h-Du-g9P" secondAttribute="bottom" constant="20" id="TbX-1E-pGf"/>
                             <constraint firstItem="chf-vK-RhQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="WRh-pE-ccO"/>
                             <constraint firstItem="chf-vK-RhQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Wak-ye-aCY"/>
