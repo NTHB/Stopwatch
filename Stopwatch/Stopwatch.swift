@@ -12,6 +12,10 @@ class Stopwatch {
     
     private var startTime: Date?
     
+    private var pauseTime: Date?
+    
+    private var isPause = false
+    
     var elapsedTime: TimeInterval {
         if let startTime = self.startTime {
             return -startTime.timeIntervalSinceNow
@@ -25,10 +29,23 @@ class Stopwatch {
     }
     
     func start(){
-        startTime = Date()
+        if(isPause == false){
+            startTime = Date()
+        } else {
+            startTime = pauseTime
+        }
+        
     }
     
     func stop(){
+        pauseTime = startTime
         startTime = nil
+        isPause = true
+        print(pauseTime)
+    }
+    
+    func reset(){
+        startTime = nil
+        isPause = false
     }
 }
